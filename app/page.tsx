@@ -16,16 +16,16 @@ import {
 
 export default function Home() {
   return (
-    <div className="bg-background w-screen h-screen">
-      <section className="w-screen h-screen flex relative">
-        <div className="w-3/5 p-20">
+    <div className="bg-background w-screen lg:h-screen">
+      <section className="w-screen lg:h-screen lg:flex relative">
+        <div className="lg:w-3/5 p-10 lg:p-20">
           <HeroLabel />
         </div>
-        <div className="w-2/5">
+        <div className="lg:w-2/5">
           <img
             src="/myimage.png"
             alt="hero"
-            className="w-full h-full object-cover relative z-10 rounded-lg"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function Home() {
         <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
           Education
         </Label>
-        <div className="flex w-screen px-20">
+        <div className="flex w-screen px-10 lg:px-20">
           <div className="bg-card h-full w-full rounded-md">
             <EducationItem
               instituteName="Sri Krishna Institute of Technology"
@@ -57,7 +57,7 @@ export default function Home() {
         <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
           Work History
         </Label>
-        <div className="flex w-screen px-20">
+        <div className="flex w-screen px-10 lg:px-20">
           <div className="bg-card h-full w-full rounded-md">
             <EducationItem
               instituteName="ABC Software Services"
@@ -81,8 +81,8 @@ export default function Home() {
         <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
           Skills
         </Label>
-        <div className="flex w-screen px-20">
-          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-12">
+        <div className="flex w-screen px-10 lg:px-20">
+          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-8 lg:p-12">
             <IconCard />
           </div>
         </div>
@@ -91,8 +91,8 @@ export default function Home() {
         <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
           Portfolio
         </Label>
-        <div className="flex w-screen px-20">
-          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-12">
+        <div className="flex w-screen px-10 lg:px-20">
+          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-6 px-0 lg:p-12">
             <PortfolioCarousel />
           </div>
         </div>
@@ -102,32 +102,32 @@ export default function Home() {
           Contact
         </Label>
         <div className="flex w-screen justify-center">
-          <div className="w-1/2">
-            <Label className="text-card-foreground text-2xl font-bold flex justify-end items-center p-10">
+          <div className="lg:w-1/2 w-1/4">
+            <Label className="text-card-foreground text-2xl font-bold flex justify-end items-center p-4 lg:p-10">
               Get in touch
             </Label>
           </div>
-          <div className="w-1/2 flex">
-            <div className="flex gap-4 p-10">
+          <div className="lg:w-1/2 w-3/4 flex">
+            <div className="flex gap-4 lg:p-10">
               <div className="flex flex-col gap-4">
-                <Label className="text-card-foreground text-lg font-medium">
+                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
                   Email
                 </Label>
-                <Label className="text-card-foreground text-lg font-medium">
+                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
                   Phone
                 </Label>
-                <Label className="text-card-foreground text-lg font-medium">
+                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
                   Address
                 </Label>
               </div>
               <div className="flex flex-col gap-4">
-                <Label className="text-card-foreground text-lg font-light">
+                <Label className="text-card-foreground text-sm lg:text-lg font-light">
                 <a href="mailto:ujwalpaswan1214@gmail.com">ujwalpaswan1214@gmail.com</a>
                 </Label>
-                <Label className="text-card-foreground text-lg font-light">
+                <Label className="text-card-foreground text-sm lg:text-lg font-light">
                 <a href="tel:+918310235365">+91 8310235365</a>
                 </Label>
-                <Label className="text-card-foreground text-lg font-light">
+                <Label className="text-card-foreground text-sm lg:text-lg font-light">
                   Bangalore, India
                 </Label>
               </div>

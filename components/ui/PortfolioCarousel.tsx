@@ -11,10 +11,10 @@ import { Button } from "./button";
 
 const PortfolioCarousel = () => {
   return (
-    <div className="w-full px-12">
+    <div className="w-full px-6 lg:px-12">
       <Carousel>
         <CarouselContent>
-          <CarouselItem className="basis-1/2">
+          <CarouselItem className="basis lg:basis-1/2">
             <PortfolioCarouselItem
               projectName="MotoGhar"
               imgUrl="/motoghar.png"
@@ -22,7 +22,7 @@ const PortfolioCarousel = () => {
               A cutting-edge platform developed with Next.js, NestJS, and GraphQL, tailored for seamless vehicle rental and sales. It features secure file storage via AWS S3, ensuring data safety and reliability. The platform delivers an intuitive user experience with optimized data handling and responsive interfaces, boosting user engagement by 20%. Whether renting or buying, users enjoy a smooth and efficient experience designed to meet their needs."
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2">
+          <CarouselItem className="basis lg:basis-1/2">
             <PortfolioCarouselItem
               projectName="AiWiz"
               imgUrl="/aiwiz.png"
@@ -34,7 +34,7 @@ const PortfolioCarousel = () => {
               transformation process."
             />
           </CarouselItem>
-          <CarouselItem className="basis-1/2">
+          <CarouselItem className="basis lg:basis-1/2">
             <PortfolioCarouselItem
               projectName="NammaSkit"
               imgUrl="/nammaskit.png"
@@ -70,12 +70,12 @@ const PortfolioCarouselItem = ({
           className="object-cover aspect-video border border-border"
         />
       </div>
-      <div className="flex flex-col h-full p-6 gap-2 border border-border border-t-0 relative pb-16">
+      <div className="flex flex-col h-full p-6 gap-2 border border-border border-t-0 relative">
         <Label className="text-2xl font-semibold text-card-foreground">
           {projectName}
         </Label>
         <Label className="text-sm text-card-foreground font-light">{description}</Label>
-        <Button className="mt-4 absolute bottom-4">Learn More</Button>
+        {/* <Button className="mt-4 absolute bottom-4">Learn More</Button> */}
       </div>
     </div>
   );

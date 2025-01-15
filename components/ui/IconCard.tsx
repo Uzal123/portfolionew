@@ -35,18 +35,12 @@ import {
   SiDocker,
   SiShadcnui 
 } from "react-icons/si";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 const IconCard = () => {
   return (
     <div className="flex flex-col items-center gap-3 text-card-foreground">
       <Label className="flex justify-center text-2xl text-accent">FrontEnd</Label>
-      <div className="flex gap-2">
+      <div className="flex justify-center flex-wrap lg:flex-nowrap gap-2">
         <IconCardItems icon={<FaReact />} title="React.js" />
         <IconCardItems icon={<RiNextjsLine />} title="Next.js" />
         <IconCardItems icon={<FaAngular />} title="Angular" />
@@ -58,7 +52,7 @@ const IconCard = () => {
         <IconCardItems icon={<SiRedux />} title="Zustand" />
       </div>
       <Label className="flex justify-center text-2xl text-accent">BackEnd</Label>
-      <div className="flex gap-2">
+      <div className="flex justify-center flex-wrap lg:flex-nowrap gap-2">
         <IconCardItems icon={<SiNodedotjs />} title="Node.js" />
         <IconCardItems icon={<SiExpress />} title="Express.js" />
         <IconCardItems icon={<SiNestjs />} title="Nest.js" />
@@ -74,7 +68,7 @@ const IconCard = () => {
       </div>
       <Label className="flex justify-center text-2xl text-accent">DevOps and Tools</Label>
 
-      <div className="flex gap-2">
+      <div className="flex justify-center flex-wrap lg:flex-nowrap gap-2">
         <IconCardItems icon={<FaGitAlt />} title="Git" />
         <IconCardItems icon={<FaGithub />} title="Github" />
         <IconCardItems icon={<FaDocker />} title="Docker" />
@@ -82,8 +76,8 @@ const IconCard = () => {
         <IconCardItems icon={<GrAction />} title="CI/CD" />
         <IconCardItems icon={<VscAzureDevops />} title="Azure DevOps" />
       </div>
-      <Label className="flex justify-center text-2xl text-accent">Other Technologies</Label>
-      <div className="flex gap-2">
+      <Label className="flex justify-center text-center text-2xl text-accent">Other Technologies</Label>
+      <div className="flex justify-center flex-wrap lg:flex-nowrap gap-2">
         <IconCardItems icon={<SiOpenai />} title="OpenAI" />
         <IconCardItems icon={<SiDocker />} title="Docker" />
         <IconCardItems icon={<SiLinux />} title="Linux" />
