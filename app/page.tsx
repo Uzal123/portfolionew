@@ -3,16 +3,6 @@ import HeroLabel from "@/components/ui/HeroLabel";
 import IconCard from "@/components/ui/IconCard";
 import PortfolioCarousel from "@/components/ui/PortfolioCarousel";
 import { Label } from "@radix-ui/react-label";
-import { Icon } from "lucide-react";
-import { FaReact } from "react-icons/fa";
-import { RiNextjsLine } from "react-icons/ri";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiTailwindcss,
-  SiBootstrap,
-  SiRedux,
-} from "react-icons/si";
 
 export default function Home() {
   return (

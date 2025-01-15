@@ -7,7 +7,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Label } from "@radix-ui/react-label";
-import { Button } from "./button";
 
 const PortfolioCarousel = () => {
   return (

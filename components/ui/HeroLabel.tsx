@@ -9,7 +9,7 @@ const HeroLabel = () => {
   };
   return (
     <div className="w-full h-full flex flex-col justify-center">
-      <Label className="text-5xl font-bold">I'm Ujjwal Paswan</Label>
+      <Label className="text-5xl font-bold">I&apos;m Ujjwal Paswan</Label>
       <Label className="text-5xl font-bold">
         <span className="text-primary">Web </span>Developer
       </Label>
