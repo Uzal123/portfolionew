@@ -2,20 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 219 50% 85%; /* Light teal */
+    --foreground: 240 10% 3.9%; /* Dark base */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 10% 3.9%; /* Dark base */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 240 10% 3.9%; /* Dark base */
+    --primary: 29 100% 50%; /* Orange */
+    --primary-foreground: 0 0% 98%; /* Near white */
+    --secondary: 276 50% 30%; /* Purple */
+    --secondary-foreground: 0 0% 98%; /* Near white */
+    --muted: 240 3.8% 46.1%; /* Muted gray */
+    --muted-foreground: 240 10% 90%; /* Light gray */
+    --accent: 173 58% 50%; /* Teal */
+    --accent-foreground: 0 0% 98%; /* Near white */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* Near white */
+    --border: 240 5.9% 90%; /* Light gray */
+    --input: 240 5.9% 90%; /* Light gray */
+    --ring: 240 10% 3.9%; /* Dark base */
+    --chart-1: 29 100% 50%; /* Orange */
+    --chart-2: 173 58% 50%; /* Teal */
+    --chart-3: 197 37% 40%; /* Dark teal */
+    --chart-4: 43 74% 66%; /* Yellow-green */
+    --chart-5: 276 50% 50%; /* Purple */
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%; /* Dark base */
+    --foreground: 0 0% 98%; /* Near white */
+    --card: 240 10% 10%; /* Dark gray */
+    --card-foreground: 0 0% 98%; /* Near white */
+    --popover: 240 10% 10%; /* Dark gray */
+    --popover-foreground: 0 0% 98%; /* Near white */
+    --primary: 29 100% 50%; /* Orange */
+    --primary-foreground: 0 0% 98%; /* Near white */
+    --secondary: 276 50% 30%; /* Purple */
+    --secondary-foreground: 0 0% 98%; /* Near white */
+    --muted: 240 5% 20%; /* Muted dark */
+    --muted-foreground: 240 5% 64.9%; /* Light muted */
+    --accent: 173 58% 50%; /* Teal */
+    --accent-foreground: 0 0% 98%; /* Near white */
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 0 0% 98%; /* Near white */
+    --border: 240 5% 15%; /* Dark gray */
+    --input: 240 5% 15%; /* Dark gray */
+    --ring: 240 5% 20%; /* Muted dark */
+    --chart-1: 29 100% 50%; /* Orange */
+    --chart-2: 173 58% 50%; /* Teal */
+    --chart-3: 197 37% 40%; /* Dark teal */
+    --chart-4: 43 74% 66%; /* Yellow-green */
+    --chart-5: 276 50% 50%; /* Purple */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+html, body {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

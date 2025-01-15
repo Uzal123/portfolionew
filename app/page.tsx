@@ -1,100 +1,140 @@
-import Image from "next/image";
+import EducationItem from "@/components/ui/EducationItem";
+import HeroLabel from "@/components/ui/HeroLabel";
+import IconCard from "@/components/ui/IconCard";
+import PortfolioCarousel from "@/components/ui/PortfolioCarousel";
+import { Label } from "@radix-ui/react-label";
+import { Icon } from "lucide-react";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiBootstrap,
+  SiRedux,
+} from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-background w-screen h-screen">
+      <section className="w-screen h-screen flex relative">
+        <div className="w-3/5 p-20">
+          <HeroLabel />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="w-2/5">
+          <img
+            src="/myimage.png"
+            alt="hero"
+            className="w-full h-full object-cover relative z-10 rounded-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        </div>
+      </section>
+      <section className="w-screen">
+        <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
+          Education
+        </Label>
+        <div className="flex w-screen px-20">
+          <div className="bg-card h-full w-full rounded-md">
+            <EducationItem
+              instituteName="Sri Krishna Institute of Technology"
+              role="Student"
+              durationFromTo="2019-2023"
+              courseName="Bachelor of Computer Science and Engineering"
+              description="I have completed my Bachelor's degree in Computer Science and Engineering from Sri Krishna Institute of Technology, Bangalore. I have learned various programming languages and technologies during my academic journey, which have significantly enhanced my knowledge and expertise in various web technologies."
+            />
+            <div className="w-auto mx-12 h-[0.5] rounded-full bg-accent"></div>
+            <EducationItem
+              instituteName="Jana Jyoti Higher Secondary School"
+              role="Student"
+              durationFromTo="2017-2019"
+              courseName="Higher Secondary Education"
+              description="I have completed my Higher Secondary Education from Jana Jyoti Higher Secondary School. I have learned various subjects during my academic journey, which have significantly enhanced my knowledge and expertise in various subjects."
+            />
+          </div>
+        </div>
+      </section>
+      <section className="w-screen">
+        <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
+          Work History
+        </Label>
+        <div className="flex w-screen px-20">
+          <div className="bg-card h-full w-full rounded-md">
+            <EducationItem
+              instituteName="ABC Software Services"
+              role="Associate Software Engineer"
+              durationFromTo="Sept 2023 - Present"
+              courseName="Nodejs, Python, Express, MySQL, PostgreSQL, OpenAI, Azure DevOps"
+              description="Spearheaded backend infrastructure development for the AIWIZ application, utilizing Node.js, REST APIs, and OpenAI for legacy system modernization. Collaborated with frontend teams to ensure smooth API integration, improving overall user experience and performance. Managed CI/CD pipelines and deployments through Azure DevOps, reducing release cycle times by 15%. Conducted comprehensive code reviews, improving code quality and maintaining industry best practices."
+            />
+            <div className="w-auto mx-12 h-[0.5] rounded-full bg-accent"></div>
+            <EducationItem
+              instituteName="Mevi Technologies"
+              role="Web Developer"
+              durationFromTo="Nov 2023 - Feb 2024"
+              courseName="Nextjs, TypeScript, REST APIs"
+              description="Developed a high-performance landing page using Next.js and TypeScript, improving load time by 30% and ensuring full SEO optimization. Integrated backend APIs for real-time data fetching, focusing on state management and enhancing responsiveness across devices. Worked closely with backend engineers to optimize data flow and minimize latency, enhancing the overall user experience."
+            />
+          </div>
+        </div>
+      </section>
+      <section className="w-screen">
+        <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
+          Skills
+        </Label>
+        <div className="flex w-screen px-20">
+          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-12">
+            <IconCard />
+          </div>
+        </div>
+      </section>
+      <section className="w-screen">
+        <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
+          Portfolio
+        </Label>
+        <div className="flex w-screen px-20">
+          <div className="bg-card h-full w-full rounded-md flex items-center flex-col p-12">
+            <PortfolioCarousel />
+          </div>
+        </div>
+      </section>
+      <footer className="w-screen flex justify-center items-center flex-col" id="contact">
+        <Label className="text-primary text-4xl font-bold flex justify-center items-center w-screen p-10">
+          Contact
+        </Label>
+        <div className="flex w-screen justify-center">
+          <div className="w-1/2">
+            <Label className="text-card-foreground text-2xl font-bold flex justify-end items-center p-10">
+              Get in touch
+            </Label>
+          </div>
+          <div className="w-1/2 flex">
+            <div className="flex gap-4 p-10">
+              <div className="flex flex-col gap-4">
+                <Label className="text-card-foreground text-lg font-medium">
+                  Email
+                </Label>
+                <Label className="text-card-foreground text-lg font-medium">
+                  Phone
+                </Label>
+                <Label className="text-card-foreground text-lg font-medium">
+                  Address
+                </Label>
+              </div>
+              <div className="flex flex-col gap-4">
+                <Label className="text-card-foreground text-lg font-light">
+                <a href="mailto:ujwalpaswan1214@gmail.com">ujwalpaswan1214@gmail.com</a>
+                </Label>
+                <Label className="text-card-foreground text-lg font-light">
+                <a href="tel:+918310235365">+91 8310235365</a>
+                </Label>
+                <Label className="text-card-foreground text-lg font-light">
+                  Bangalore, India
+                </Label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Label className="text-muted">© 2023 Ujjwal Paswan</Label>
       </footer>
     </div>
   );
