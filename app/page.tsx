@@ -50,7 +50,7 @@ export default function Home() {
         <div className="flex w-screen px-10 lg:px-20">
           <div className="bg-card h-full w-full rounded-md">
             <EducationItem
-              instituteName="ABC Software Services"
+              instituteName="SLK Software Services"
               role="Associate Software Engineer"
               durationFromTo="Sept 2023 - Present"
               courseName="Nodejs, Python, Express, MySQL, PostgreSQL, OpenAI, Azure DevOps"
