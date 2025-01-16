@@ -2,12 +2,17 @@ import EducationItem from "@/components/ui/EducationItem";
 import HeroLabel from "@/components/ui/HeroLabel";
 import IconCard from "@/components/ui/IconCard";
 import PortfolioCarousel from "@/components/ui/PortfolioCarousel";
+import { ModeToggle } from "@/components/ui/themeToggle";
 import { Label } from "@radix-ui/react-label";
 
 export default function Home() {
   return (
     <div className="bg-background w-screen lg:h-screen">
       <section className="w-screen lg:h-screen lg:flex relative">
+        <div className="absolute top-4 right-10 lg:top-10 lg:left-20">
+        <ModeToggle />
+
+        </div>
         <div className="lg:w-3/5 p-10 lg:p-20">
           <HeroLabel />
         </div>
@@ -93,31 +98,31 @@ export default function Home() {
         </Label>
         <div className="flex w-screen justify-center">
           <div className="lg:w-1/2 w-1/4">
-            <Label className="text-card-foreground text-2xl font-bold flex justify-end items-center p-4 lg:p-10">
+            <Label className="text-card-foreground text-2xl font-bold flex justify-end items-center px-4 lg:p-10">
               Get in touch
             </Label>
           </div>
           <div className="lg:w-1/2 w-3/4 flex">
             <div className="flex gap-4 lg:p-10">
               <div className="flex flex-col gap-4">
-                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
+                <Label className="text-card-foreground lg:text-sm text-xs font-medium">
                   Email
                 </Label>
-                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
+                <Label className="text-card-foreground lg:text-sm text-xs font-medium">
                   Phone
                 </Label>
-                <Label className="text-card-foreground text-sm lg:text-lg font-medium">
+                <Label className="text-card-foreground lg:text-sm text-xs font-medium">
                   Address
                 </Label>
               </div>
               <div className="flex flex-col gap-4">
-                <Label className="text-card-foreground text-sm lg:text-lg font-light">
+                <Label className="text-card-foreground lg:text-sm text-xs font-light">
                 <a href="mailto:ujwalpaswan1214@gmail.com">ujwalpaswan1214@gmail.com</a>
                 </Label>
-                <Label className="text-card-foreground text-sm lg:text-lg font-light">
+                <Label className="text-card-foreground lg:text-sm text-xs font-light">
                 <a href="tel:+918310235365">+91 8310235365</a>
                 </Label>
-                <Label className="text-card-foreground text-sm lg:text-lg font-light">
+                <Label className="text-card-foreground lg:text-sm text-xs font-light">
                   Bangalore, India
                 </Label>
               </div>

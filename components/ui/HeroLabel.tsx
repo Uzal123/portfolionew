@@ -13,7 +13,7 @@ const HeroLabel = () => {
       <Label className="text-5xl font-bold">
         <span className="text-primary">Web </span>Developer
       </Label>
-      <Label className="pt-4">
+      <Label className="pt-4 lg:text-sm text-xs">
         Software Engineer with 2+ years of experience in developing scalable web
         applications and backend services. Skilled in Node.js, React, and AWS,
         with a focus on improving performance and user experience. Proven

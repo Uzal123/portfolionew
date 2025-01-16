@@ -73,7 +73,7 @@ const PortfolioCarouselItem = ({
         <Label className="text-2xl font-semibold text-card-foreground">
           {projectName}
         </Label>
-        <Label className="text-sm text-card-foreground font-light">{description}</Label>
+        <Label className="lg:text-sm text-xs text-card-foreground font-light">{description}</Label>
         {/* <Button className="mt-4 absolute bottom-4">Learn More</Button> */}
       </div>
     </div>

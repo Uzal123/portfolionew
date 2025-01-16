@@ -34,7 +34,7 @@ const EducationItem = ({
         <Label className="text-lg font-medium text-card-foreground">
           {courseName}
         </Label>
-        <Label className="text-card-foreground font-light">{description}</Label>
+        <Label className="text-card-foreground lg:text-sm text-xs font-light">{description}</Label>
       </div>
     </div>
   );

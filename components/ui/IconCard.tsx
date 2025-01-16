@@ -97,7 +97,7 @@ const IconCardItems = ({ icon, title }: { icon: ReactNode; title: string }) => {
       <div className="w-14 h-14 rounded-full border-2 border-border p-4 flex text-2xl items-center justify-center hover:scale-110">
         {icon}
       </div>
-      <Label className="text-sm text-center h-6 text-card-foreground font-light">{title}</Label>
+      <Label className="lg:text-sm text-xs text-center h-6 text-card-foreground font-light">{title}</Label>
     </div>
   );
 };
